@@ -1,2 +1,2 @@
 # natemking.github.io
-Nate King Portfolio
+Nate M Kings Portfolio
