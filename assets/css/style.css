@@ -21,3 +21,15 @@ main {
     font-weight: 600;
     font-style: italic;
 }
+
+.my-fig-cap {
+    font-size: 10px;
+    color: #c0c0c0;
+}
+
+.my-fig-cap a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #c0c0c0;
+}
+
