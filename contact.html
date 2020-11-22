@@ -45,19 +45,27 @@
             <hr>
             <!-- Contact Form -->
             <section class="container-sm">
-                <div class="form-group">
-                    <!-- Name input -->
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Name" required>
-                    <!-- Email Input -->
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" 
-                    placeholder="name@example.com" required>
-                </div>
-                <div class="form-group">
+                <form class="form-group">
+                    <!-- Name & email row -->
+                    <section class="row">
+                        <!-- Name input -->
+                        <section class="col">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name" required>
+                        </section>        
+                        <!-- Email Input -->
+                        <section class="col">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" 
+                            placeholder="name@example.com" required>
+                        </section>
+                    </section>                         
+                    <!-- Message Input -->
                     <label for="exampleFormControlTextarea1">Message</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
-                </div>
+                    <!-- Submit Button -->
+                    <button class="btn btn-lg btn-dark btn-block mt-4" type="submit">Submit</button>
+                </form>
                   
             </section>
         </section>
