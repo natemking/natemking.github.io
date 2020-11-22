@@ -33,6 +33,15 @@ main {
     color: #c0c0c0;
 }
 
+#social-media-icons a {
+    color: #9a9da0;
+}
+
+#social-media-icons a:hover {
+    color: #000;
+    size: 50px;
+}
+
 .my-v-align {
     vertical-align: -50%;
 }
