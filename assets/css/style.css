@@ -1,4 +1,6 @@
 
+/* Global CSS */
+
 body {
     background-color: #c0c0c0;
 }
@@ -10,21 +12,24 @@ main {
     font-size: 24px;
 }
 
-main p {
-    font-size: 20px;
-    text-align: justify;
-}
-
 .my-name {
     font-family: 'Josefin Slab', serif;
     font-weight: 700;
     font-size: 5vh;
 }
 
-.new-h1 {
+.my-h1 {
     font-family: 'Josefin Slab', serif;
     font-weight: 600;
     font-style: italic;
+}
+
+
+/* About Me Page CSS */
+.bio {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
 }
 
 .my-fig-cap {
@@ -38,6 +43,9 @@ main p {
     color: #c0c0c0;
 }
 
+
+/* Contact Page CSS */
+/* Override formatting on fontawesome icon links */
 #social-media-icons .fa {
     color: #9a9da0;
 }
@@ -50,6 +58,7 @@ main p {
     vertical-align: -50%;
 }
 
+/* Override submit button hover BootStrap formatting */
 .btn-dark:hover {
     color: #1d2124;
     background-color: #ffc108;
