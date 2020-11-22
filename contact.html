@@ -9,6 +9,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;700&family=Josefin+Slab:ital,wght@0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 </head>
@@ -39,9 +41,21 @@
             </div>
         </nav>
 
-        <!-- Contact -->
-        <section class="col-10 col-sm-7 bg-light my-5 mx-auto m-md-5 p-4 clearfix">
-            <h1 class="new-h1">Contact</h1>
+        <!-- Contact Section-->
+        <section class="col-10 col-sm-7 bg-light my-5 mx-auto m-md-5 p-4">
+           <!-- Contact Heading and social media links row -->
+            <section class="row">
+                <!-- Contact Heading column -->
+                <section class="col-7 col-md-8">
+                    <h1 class="new-h1">Contact</h1>
+                </section>
+                <!-- Social media links    -->
+                <section class="col-5 col-md-4 text-right">
+                    <i class="fa fa-github mr-2 my-v-align" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin-square mr-2 my-v-align"  aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square my-v-align" aria-hidden="true"></i>
+                </section>
+            </section>    
             <hr>
             <!-- Contact Form -->
             <section class="container-sm">
@@ -59,9 +73,9 @@
                         </section> 
                         <!-- Email Input and invalid email warning -->
                         <section class="col-md-6">
-                            <label for="exampleFormControlInput1">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" 
-                            placeholder="name@example.com" required>
+                            <label for="email address">Email address</label>
+                            <input type="email" class="form-control" id="email" 
+                            placeholder="name@email.com" required>
                                  <!-- Invalid Email Warning -->
                                  <section class="invalid-feedback">
                                     Please enter a valid email address
@@ -71,8 +85,8 @@
                     <!-- Message Input Row -->
                     <section class="form-row">
                         <!-- Message Input -->
-                        <label for="exampleFormControlTextarea1">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                        <label for="message">Message</label>
+                        <textarea type="text" class="form-control" id="message" rows="4" placeholder="Message"></textarea>
                     </section>    
                     <!-- Submit Button Row -->
                     <section class="form-row">
