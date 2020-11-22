@@ -10,6 +10,11 @@ main {
     font-size: 24px;
 }
 
+main p {
+    font-size: 20px;
+    text-align: justify;
+}
+
 .my-name {
     font-family: 'Josefin Slab', serif;
     font-weight: 700;
