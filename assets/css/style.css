@@ -44,3 +44,9 @@ main {
 .my-v-align {
     vertical-align: -50%;
 }
+
+.btn-dark:hover {
+    color: #1d2124;
+    background-color: #ffc108;
+    border-color: #1d2124;
+}
