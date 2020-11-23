@@ -17,10 +17,10 @@ I can see the advantage using BootStrap can be to developers. It allows for quic
 ---
 
 ## Credits
- - BootStrap https://www.getbootstrap.com
- - Background pattern found on https://www.subtlepatterns.com/
- - Fonts fromm Google Fonts https://fonts.google.com
- - Icons from FontAwesome v4.7.0 https://fontawesome.com/v4.7.0/icons/
- - Photo of Nate by Devyn Haas http://www.devynhaas.com
+ * [www.getbootstrap.com](https://www.getbootstrap.com)
+ * Background pattern found on [SubtlePatterns](https://www.subtlepatterns.com/)
+ * Fonts from [Google Fonts](https://fonts.google.com)
+ * Icons from [FontAwesome v4.7.0](https://fontawesome.com/v4.7.0/icons/)
+ * Photo of Nate by Devyn Haas [devynhaas.com](http://www.devynhaas.com)
 
 ---
