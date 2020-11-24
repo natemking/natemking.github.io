@@ -22,7 +22,7 @@ I can see the advantage using BootStrap can be to developers. It allows for quic
 ---
 
 ## Credits
- * [www.getbootstrap.com](https://www.getbootstrap.com)
+ * [BootStrap](https://www.getbootstrap.com)
  * Background pattern found on [SubtlePatterns](https://www.subtlepatterns.com/)
  * Fonts from [Google Fonts](https://fonts.google.com)
  * Icons from [FontAwesome v4.7.0](https://fontawesome.com/v4.7.0/icons/)
