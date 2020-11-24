@@ -23,10 +23,10 @@ Lastly, I took the extra step to publish my portfolio to my custom domain. I was
 
 index.html
 ![index.html @ 992px](./assets/screenshots/992-index.jpg?raw=true")
-
+<br>
 portfolio.html
 ![portfolio.html @ 992px](./assets/screenshots/992-portfolio.jpg?raw=true)
-
+<br>
 contact.html
 ![contact.html @ 992px](./assets/screenshots/992-contact.jpg?raw=true)
 
@@ -38,10 +38,10 @@ contact.html
 
 index.html
 ![index.html @ 992px](./assets/screenshots/768-index.jpg?raw=true")
-
+<br>
 portfolio.html
 ![portfolio.html @ 992px](./assets/screenshots/768-portfolio.jpg?raw=true)
-
+<br>
 contact.html
 ![contact.html @ 992px](./assets/screenshots/768-contact.jpg?raw=true)
 
