@@ -17,6 +17,7 @@ Lastly, I took the extra step to publish my portfolio to my custom domain. I was
 
 ---
 ## Screenshots
+###### _click to expand_
 <details>
 <summary>Screenshots of pages @ 992px</summary>
 <br>
