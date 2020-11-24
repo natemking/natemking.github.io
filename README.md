@@ -12,7 +12,7 @@ The contact page has a fully built out contact form. For now, though, it is only
 
 I took advantage of Google Fonts and FontAwesome to add even more customization. I ran into a stumbling block with the FontAwesome icons. I used FA v4.7 and discovered there is limited functionality in regards to sizing and spatial positioning that is better handled in later versions of FontAwesome. I also had some issues with the visited color of those icons after turning them into links. I was able to find a solution by affecting the built-in class that came with the icons in my CSS file.
 
-Lastly, I took the extra step to publish my portfolio to my custom domain. I was able to utilize the custom domain feature in the GitHub pages settings of my repo. I had to add a few @ records and a cname record within the DNS settings of domain on my registrars site. It did take some time for GitHubs provided TLS cert to apply.  When the time comes to share this with prospective employers, I want them to know that I can deploy as well as build. 
+Lastly, I took the extra step to publish my portfolio to my custom domain. I was able to utilize the custom domain feature in the GitHub pages settings of my repo. I had to add a few @ records and a cname record within the DNS settings of my domain on my registrars site. It did take some time for GitHubs provided TLS cert to apply.  When the time comes to share this with prospective employers, I want them to know that I can deploy as well as build. 
 
 ---
 
