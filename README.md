@@ -22,7 +22,7 @@ Lastly, I took the extra step to publish my portfolio to my custom domain. I was
 <summary>Screenshots of pages @ 992px</summary>
 <br>
 
-![index.html @ 992px](./assets/screenshots/992-index.jpg?raw=true")
+![index.html @ 992px](./assets/screenshots/992-index.jpg?raw=true)
 <br>
 index.html
 <br>
@@ -43,7 +43,7 @@ contact.html
 <summary>Screenshots of pages @ 768px</summary>
 <br>
 
-![index.html @ 992px](./assets/screenshots/768-index.jpg?raw=true")
+![index.html @ 992px](./assets/screenshots/768-index.jpg?raw=true)
 <br>
 index.html
 <br>
@@ -64,7 +64,7 @@ contact.html
 <summary>Screenshots of pages @ 400px</summary>
 <br>
 
-![index.html @ 992px](./assets/screenshots/400-index.jpg?raw=true")
+![index.html @ 992px](./assets/screenshots/400-index.jpg?raw=true)
 <br>
 index.html
 <br>

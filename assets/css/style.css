@@ -43,6 +43,11 @@ main {
     color: #c0c0c0;
 }
 
+.my-fig-cap2 {
+    font-size: inherit;
+    color: #808080;
+}
+
 
 /* Contact Page CSS */
 /* Override formatting on fontawesome icon links */
