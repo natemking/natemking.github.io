@@ -20,7 +20,7 @@ I took advantage of Google Fonts and FontAwesome to add even more customization.
 
 Lastly, I took the extra step to publish my portfolio to my custom domain. I was able to utilize the custom domain feature in the GitHub pages settings of my repo. I had to add a few @ records and a cname record within the DNS settings of my domain on my registrars site. It did take some time for GitHubs provided TLS cert to apply.  When the time comes to share this with prospective employers, I want them to know that I can deploy as well as build. 
 
----
+
 ## Screenshots
 ###### _click to expand_
 <details>
@@ -86,12 +86,6 @@ contact.html
 
 </details>
 
----
-
-#### Final Thoughts
-I can see the advantage using BootStrap can be to developers. It allows for quick and easy deployment of a quality looking website. The built in responsive features also take a large burden off of the developer in not having to create media queries. My only concern with BootStrap is that if it's relied upon too heavily by web developers, it could lead to too much homogenous looking work. It is up to the developer to really dive in and customize their work if utilizing BootStrap.
-
----
 
 ## Credits
  * [BootStrap](https://www.getbootstrap.com)
@@ -101,3 +95,7 @@ I can see the advantage using BootStrap can be to developers. It allows for quic
  * Photo of Nate by Devyn Haas [devynhaas.com](http://www.devynhaas.com)
 
 ---
+
+GitHub: [@natemking](https://github.com/natemking/)
+
+Email: [natmeking@gmail.com](mailto:natmeking@gmail.com)
