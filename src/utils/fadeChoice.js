@@ -1,8 +1,8 @@
 import FadeIn from '../utils/FadeIn'
 
-// Due to the FadeIn effect, the z-index of the about & resume pages we not applying correctly
+// Due to the FadeIn effect the z-index of the about & resume pages we not applying correctly
 // at page load on mobile devices. This function only allows the components to render with the
-// FadeIn effect only if the screen is wider that 500px
+// FadeIn effect if the screen is wider than 500px
 
 const fadeChoice = (Page) => {
     let width = window.innerWidth
