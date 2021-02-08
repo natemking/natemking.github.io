@@ -2,12 +2,9 @@ import React, { useState, Suspense, lazy } from 'react';
 import './style.css'
 import Loading from '../Loading';
 import work from '../../utils/work'
-// import GalleryJumbo from '../GalleryJumbo';
-// import GalleryDeck from '../GalleryDeck';
 
 const GalleryJumbo = lazy(() => import('../GalleryJumbo'));
 const GalleryDeck = lazy(() => import('../GalleryDeck'));
-
 
 const Gallery = () => {
     // State for project the user chooses
