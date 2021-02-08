@@ -1,101 +1,72 @@
-# Nate M Kings Development Portfolio
+# Nate M King - React Portfolio Redesign
 
-![html badge](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
-![css badge](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
-![bootstrap badge](https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white)
 
- https://www.natemking.dev 
+<!-- [Employee Directory Deploy Link](http://www.natemking.dev/) -->
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/natemking/portfolio_2.0/blob/main/LICENSE)
+
+![css3 badge](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=flat&logo=css3&logoColor=white)
+![bootstrap badge](https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=flat&logo=bootstrap&logoColor=white")
+![javascript badge](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=flat&logo=javascript&logoColor=%23F7DF1E)
+![react badge](https://img.shields.io/badge/react%20-%2320232a.svg?&style=flat&logo=react&logoColor=%2361DAFB")
+
+---
+## Table of Contents
+ * [Description](#description)
+    <!-- + [Scope of Work](#scope-of-work)
+    + [Rendering](#rendering)
+    + [State, Search, and Sort](#state-search-and-sort) -->
+  * [Screenshots](#screenshots)
+  * [License](#license)
+  * [Credits](#credits)
 
 ## Description
 
-By using BootStrap as a CSS framework, I have put together an initial portfolio. I utilized BootStraps built-in responsive features to allow the site to appear properly on desktop and mobile. To try and break away from the out-of-the-box BootStrap look, I added my own CSS. Per the instructions of the assignment, I tried to limit the use of my own CSS and use as much BootStrap as I could.
+### Scope of Work
+<!-- User Story
+```
+As a user, 
+I want to be able to view my entire employee directory at once so that I have quick access to their information.
+I want to be able to sort them in ascending and descending order by all available columns
+I want to be able to easily search for an employee 
+```
+The task at hand was to create a simple employee directory by using React. The employee list is provided from an API call to randomusers.me. The list must be searchable and sortable. 
 
-For the global template, I made the main section look as if it is floating off of the body. This initially was not an artistic choice but an attempt to build the site as it is presented in the image examples in the homework folders. It turns out that that floating look is just the way GitLab formats its display of images. Instead of removing the code, I decided to stick with it because I liked the look. Since the main section is floating as it is, I have to take an unorthodox approach and put the footer inside the main. I do not know how this will affect a screen reader but on this site, the footer is more of a design element than a functional element. I decided to make the NavBar the sticky element despite the assignment asking for a sticky-footer as a bonus. I did not like the look or feel of a sticky-footer. The page has a better flow with the navbar sticking to the top.
+### Rendering
+The app can be broken down into five custom components. There are Header & Wrapper, Table & SearchBar, and TableRow. There is also an API util that is being imported into the Wrapper which in turn sends its data down to its children. Only the wrapper is Class Component. The rest of the components are stateless functional components. 
 
-The portfolio page is built but only has place holders in the gallery for now. It too is fully responsive for mobile. On a desktop, it utilizes the BootStrap grid system but goes into a single column for devices <= 768px.
+The API data is called on Wrapper mount and set to state. It is then sent to the Table via props and there it is run through the `map()` method before being rendered down to the TableRow component. The TableRow component is set up to take the data and assign it to a relative table cell. The full table is rendered in the Wrapper with the SearchBar component. The Wrapper and Header are then, in turn, rendered to App.js and then to root. 
 
-The contact page has a fully built out contact form. For now, though, it is only a framework. I attempted to use HTML attribute `action="mailto:..."` within the `<form>` element to have the form be submitted to my email but that functionality was limited. When clicking submit, it was opening the default mail app on the client machine vs mailing the information to my email as I setup in the code. After doing so research, I have concluded that the solution I am looking for to the form submission problem cannot be solved by HTML alone. I made the name and email inputs responsive to sizing. They are inline until the screen breakpoint of >768px which they then go into their own respective rows. 
+### State, Search, and Sort
+All of the search and sort functionality is taken care of in the Wrapper as this is the stateful component in the app. The sorting is triggered by an onClick event on dynamically appearing icons in the table heading. I was able to keep the sorting ability to one function for all columns. I achieved this by nesting ternary's and have a global variable that changes with every click. 
 
-I took advantage of Google Fonts and FontAwesome to add even more customization. I ran into a stumbling block with the FontAwesome icons. I used FA v4.7 and discovered there is limited functionality in regards to sizing and spatial positioning that is better handled in later versions of FontAwesome. I also had some issues with the visited color of those icons after turning them into links. I was able to find a solution by affecting the built-in class that came with the icons in my CSS file.
-
-Lastly, I took the extra step to publish my portfolio to my custom domain. I was able to utilize the custom domain feature in the GitHub pages settings of my repo. I had to add a few @ records and a cname record within the DNS settings of my domain on my registrars site. It did take some time for GitHubs provided TLS cert to apply.  When the time comes to share this with prospective employers, I want them to know that I can deploy as well as build. 
-
+The search is taken care of in the `handleInputChange()` function. When a user types in characters into the search bar, the value is set to state. Then there is a nested async function that updates the rendered employee list. First, in the function, the current API results are set to a saved state object. This is needed so that when the user deletes characters the list reverse filters. Next, the live data is filtered based on what the user is entering and then that state is updated.
+  -->
 
 ## Screenshots
-###### _click to expand_
-<details>
-<summary>Screenshots of pages @ 992px</summary>
+
+<!-- ![app gif](public/images/screenshots/employee-directory.gif)
 <br>
 
-![index.html @ 992px](./assets/screenshots/992-index.jpg?raw=true)
-<br>
-index.html
-<br>
+![component tree](public/images/screenshots/app-component-tree.png)
+<br> -->
 
-![portfolio.html @ 992px](./assets/screenshots/992-portfolio.jpg?raw=true)
-<br>
-portfolio.html
-<br>
-
-
-![contact.html @ 992px](./assets/screenshots/992-contact.jpg?raw=true)
-<br>
-contact.html
-
-</details>
-
-<details>
-<summary>Screenshots of pages @ 768px</summary>
-<br>
-
-![index.html @ 992px](./assets/screenshots/768-index.jpg?raw=true)
-<br>
-index.html
-<br>
-
-
-![portfolio.html @ 992px](./assets/screenshots/768-portfolio.jpg?raw=true)
-<br>
-portfolio.html
-<br>
-
-![contact.html @ 992px](./assets/screenshots/768-contact.jpg?raw=true)
-<br>
-contact.html
-
-</details>
-
-<details>
-<summary>Screenshots of pages @ 400px</summary>
-<br>
-
-![index.html @ 992px](./assets/screenshots/400-index.jpg?raw=true)
-<br>
-index.html
-<br>
-
-![portfolio.html @ 992px](./assets/screenshots/400-portfolio.jpg?raw=true)
-<br>
-portfolio.html
-<br>
-
-![contact.html @ 992px](./assets/screenshots/400-contact.jpg?raw=true)
-<br>
-contact.html
-<br>
-
-</details>
-
+## License
+Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 ## Credits
- * [BootStrap](https://www.getbootstrap.com)
- * Background pattern found on [SubtlePatterns](https://www.subtlepatterns.com/)
- * Fonts from [Google Fonts](https://fonts.google.com)
- * Icons from [FontAwesome v4.7.0](https://fontawesome.com/v4.7.0/icons/)
- * Photo of Nate by Devyn Haas [devynhaas.com](http://www.devynhaas.com)
+
+<!-- * [Getting Footer to appear fixed](https://stackoverflow.com/questions/25870365/troubles-with-keeping-footer-below-content)
+
+* [React loading](https://medium.com/swlh/add-loading-animation-to-your-react-app-db3999a5c88d)
+
+* [Fade in effect](https://www.joshwcomeau.com/snippets/react-components/fade-in/)
+
+* [Pathing local images in a seed json correctly](https://forum.freecodecamp.org/t/display-image-from-local-json-js-object-using-react/408351/14)  -->
 
 ---
 
 GitHub: [@natemking](https://github.com/natemking/)
 
 Email: [natmeking@gmail.com](mailto:natmeking@gmail.com)
+
