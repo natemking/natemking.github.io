@@ -1,14 +1,13 @@
 import React from 'react';
-import FadeIn from '../utils/FadeIn'
 import ResumeContainer from '../components/ResumeContainer';
-
+import fadeChoice from '../utils/fadeChoice'
 
 const Resume = () => {
     return (
-        // Render resume w/ Fade in effect
-        <FadeIn delay={250} duration={450}>
-            <ResumeContainer />
-        </FadeIn>
+        // Render resume w/ Fade in effect if the screen is wider than 500px.
+        <>
+            { fadeChoice(ResumeContainer) }
+        </>
     );
 }
  
