@@ -18,7 +18,7 @@ const work = [
         "gif": require("../components/Gallery/images/note-taker.gif"),
         "alt": "note-taker app",
         "gitHub": "https://github.com/natemking/note_taker",
-        "tools": "HTML, CSS, Bootstrap, JjQuery, Node.js, Express.js",
+        "tools": "HTML, CSS, Bootstrap, jQuery, Node.js, Express.js",
         "desc": "An easy way to keep notes stored in local storage.",
     },
     {
