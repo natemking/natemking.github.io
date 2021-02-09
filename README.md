@@ -1,7 +1,7 @@
 # Nate M King - React Portfolio Redesign
 
 
-<!-- [Employee Directory Deploy Link](http://www.natemking.dev/) -->
+[Portfolio Deploy Link](http://www.natemking.dev/)
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/natemking/portfolio_2.0/blob/main/LICENSE)
 
