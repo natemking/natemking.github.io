@@ -72,6 +72,8 @@ Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 * [Background photo by Ben Wentzel](https://www.benwentzel.net/)
 
+* [Add loading screen to image load](https://medium.com/better-programming/a-quick-and-easy-react-js-loading-screen-with-hooks-940feccd553f)
+
 ---
 
 GitHub: [@natemking](https://github.com/natemking/)
