@@ -1,5 +1,5 @@
 import React, { Suspense, lazy  } from "react";
-import { HashRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route, hashHistory } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import MainContainer from './components/MainContainer';
@@ -16,7 +16,7 @@ const ContactPage = lazy(() => import('./pages/Contact'));
 function App() {
   // Render navbar, bg image, all pages, & footer. Use code splitting and loading animation for slower connections. 
   return (
-    <Router basename='/'>
+    <Router history={ hashHistory }>
       <Suspense fallback={ <Loading /> }>
         <MainImage />
           <Navbar />
