@@ -57,9 +57,9 @@ const GalleryJumbo = ({ state }) => {
                 </p>
                 <hr />
                 <p>
-                    <a href={ url } target='_blank' rel='noreferrer'>
+                    {url !== null ? <a href={ url } target='_blank' rel='noreferrer'>
                         Deploy { disclaimer() }
-                    </a>
+                    </a> : null}
                 </p>
                 <p>
                     <a href={ gitHub } target='_blank' rel='noreferrer'>
