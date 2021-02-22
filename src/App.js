@@ -16,7 +16,7 @@ const ContactPage = lazy(() => import('./pages/Contact'));
 function App() {
   // Render navbar, bg image, all pages, & footer. Use code splitting and loading animation for slower connections. 
   return (
-    <Router>
+    <Router basename='/'>
       <Suspense fallback={ <Loading /> }>
         <MainImage />
           <Navbar />
@@ -27,7 +27,7 @@ function App() {
               <Route exact path="/portfolio" component={ PortfolioPage } />
               <Route exact path="/resume" component={ ResumePage } />
               <Route exact path="/contact" component={ ContactPage } />
-            
+
             </MainContainer>
           <Footer />
       </Suspense>

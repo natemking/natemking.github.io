@@ -14,6 +14,13 @@ const GalleryJumbo = ({ state }) => {
         setTimeout(() => setLoading(false), 6000)
     },[ gif ])
 
+    const disclaimer = () => {
+      const regex = /heroku/i
+      if (regex.test(url)) {
+          return ' - Please allow some time for Heroku Dyno to spin up after connecting.'
+      }
+    }
+
     // Render the gallery as per users choice. Lazy load the jumbo w/ a blur effect
     return (
         <section className='row mt-3 gallery__jumbo' style={about ? { display: 'flex' } : { display: 'none' }}>
@@ -35,14 +42,30 @@ const GalleryJumbo = ({ state }) => {
             <section className='col-lg-4 gallery__jumbo-text' >
                 <h4 className='text-right'>{ name }</h4>
                 <hr />
-                <h5>About.</h5>
-                <p>{ desc }</p>
+                <h5>
+                    About.
+                </h5>
+                <p>
+                    { desc }
+                </p>
                 <hr />
-                <h5>Tools.</h5>
-                <p>{ tools }</p>
+                <h5>
+                    Tools.
+                </h5>
+                <p>
+                    { tools }
+                </p>
                 <hr />
-                <p><a href={ url } target='_blank' rel='noreferrer'>Deploy</a></p>
-                <p><a href={gitHub} target='_blank' rel='noreferrer'>Git Repo</a></p>
+                <p>
+                    <a href={ url } target='_blank' rel='noreferrer'>
+                        Deploy { disclaimer() }
+                    </a>
+                </p>
+                <p>
+                    <a href={ gitHub } target='_blank' rel='noreferrer'>
+                        Git Repo
+                    </a>
+                </p>
             </section>
         </section>
     );
