@@ -158,7 +158,7 @@ const work = [
         "name": "Javascript Trivia",
         "url": "http://www.natemking.dev/javascript_trivia/",
         "img": require("../components/Gallery/images/javascript-trivia.jpg"),
-        "gif": require("../components/Gallery/images/javascript-trivia.gif"),
+        "gif": require("../components/Gallery/images/javascript-trivia.jpg"),
         "alt": "javascript powered js trivia app",
         "gitHub": "https://github.com/natemking/javascript_trivia",
         "tools": "HTML, CSS, BootStrap, Javascript",
