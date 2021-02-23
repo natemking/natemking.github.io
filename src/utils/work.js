@@ -2,7 +2,7 @@ const work = [
     {
         "id": 8,
         "name": "Rydr",
-        "url": "https://rydr-app.herokuapp.com/",
+        "url": "https://rydr.vps.natemking.dev",
         "img": require("../components/Gallery/images/rydr.jpg"),
         "gif": require("../components/Gallery/images/rydr.gif"),
         "alt": "ryder app",
@@ -13,7 +13,7 @@ const work = [
     {
         "id": 7,
         "name": "Google Book Search",
-        "url": "https://google-books-nmk.herokuapp.com/",
+        "url": "https://google-book-search.vps.natemking.dev",
         "img": require("../components/Gallery/images/book-finder.jpg"),
         "gif": require("../components/Gallery/images/book-finder.gif"),
         "alt": "react powered book search app",
@@ -35,7 +35,7 @@ const work = [
     {
         "id": 1,
         "name": "Follow Your Money",
-        "url": "https://follow-yr-money.herokuapp.com/",
+        "url": "https://follow-your-money.vps.natemking.dev",
         "img": require("../components/Gallery/images/follow-your-money.jpg"),
         "gif": require("../components/Gallery/images/follow-your-money.gif"),
         "alt": "budget app",
@@ -46,7 +46,7 @@ const work = [
     {
         "id": 4,
         "name": "Shop & Chef",
-        "url": "https://shop-n-chef.herokuapp.com",
+        "url": "https://shop-and-chef.vps.natemking.dev",
         "img": require("../components/Gallery/images/shop-n-chef.jpg"),
         "gif": require("../components/Gallery/images/shop-n-chef.gif"),
         "alt": "shop & chef app",
@@ -57,7 +57,7 @@ const work = [
     {
         "id": 9,
         "name": "Fitness Tracker",
-        "url": "https://workout-tracker-nmk.herokuapp.com/",
+        "url": "https://fitness-tracker.vps.natemking.dev",
         "img": require("../components/Gallery/images/fitness-tracker.jpg"),
         "gif": require("../components/Gallery/images/fitness-tracker.gif"),
         "alt": "fitness tracker app app",
@@ -68,7 +68,7 @@ const work = [
     {
         "id": 11,
         "name": "Burger Banquet",
-        "url": "https://burger-banquet.herokuapp.com/",
+        "url": "https://burger-banquet.vps.natemking.dev",
         "img": require("../components/Gallery/images/burger-banquet.jpg"),
         "gif": require("../components/Gallery/images/burger-banquet.gif"),
         "alt": "burger tracker app",
