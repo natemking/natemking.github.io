@@ -90,7 +90,7 @@ const work = [
     {
         "id": 2,
         "name": "Note Taker",
-        "url": "https://note-taker-nmk.herokuapp.com/",
+        "url": "https://note-taker.vps.natemking.dev",
         "img": require("../components/Gallery/images/note-taker.jpg"),
         "gif": require("../components/Gallery/images/note-taker.gif"),
         "alt": "note-taker app",
