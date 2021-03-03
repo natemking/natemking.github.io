@@ -7,7 +7,7 @@ const work = [
         "gif": require("../components/Gallery/images/rydr.gif"),
         "alt": "ryder app",
         "gitHub": "https://github.com/natemking/rydr",
-        "tools": "Group Project. My Role - Front-end: React (create user, create user profile, & update user profile functionality). Back-end: Express.js, MongoDB, Mongoose, DB Schema design",
+        "tools": "Group Project. My Role - Front-end: React (create user, create user profile, & update user profile functionality) 3rd party SaaS & Turing test integration. Back-end: Express.js, MongoDB, Mongoose, DB Schema design",
         "desc": "A new tool to help artists review and see reviews of the venues they can play. Future development - A full blown social network for artists and venues. ",
     },
     {
