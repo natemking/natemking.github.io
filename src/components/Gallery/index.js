@@ -2,67 +2,65 @@ import React, { useState, Suspense, lazy } from 'react';
 import './style.css'
 import Loading from '../Loading';
 import work from '../../utils/work'
+import 'photoswipe/dist/photoswipe.css'
+import 'photoswipe/dist/default-skin/default-skin.css'
 
-const GalleryJumbo = lazy(() => import('../GalleryJumbo'));
-const GalleryDeck = lazy(() => import('../GalleryDeck'));
+import { Gallery, Item } from 'react-photoswipe-gallery'
+import { waitForDomChange } from '@testing-library/dom';
 
-const Gallery = () => {
-    // State for project the user chooses
-    const [ selectedWork, setSelectedWork ] = useState({
-        gif:'',
-        alt: '',
-        name: '',
-        desc: '',
-        tools: '',
-        url: '',
-        gitHub: '',
-        about: false
-    })
+const MyGallery = () => {
+     
+    const deck = work.map(work => (
+        <Item 
+            id={ work.id }
+            original={ work.gif.default }
+            thumbnail={ work.imgSmall.default } 
+            alt={work.alt} 
+            width='640' 
+            height='430'
+            title={ work.desc } 
+            key={work.id}
+        >
+            {({ ref, open }) => (
+                <img ref={ref} onClick={open} src={work.imgSmall.default} alt={work.alt} id={ work.idName } />
+            )}
+            
+        </Item>
+     ));
 
-    // On click set state to the project the user chose
-    const handleClickEvent = (e) => {
-        
-        let userPick = work.filter(work => (
-            work.id.toString() === e.target.id
-        ));
-
-        setSelectedWork({
-            gif: userPick[0].gif,
-            alt: userPick[0].alt,
-            name: userPick[0].name,
-            desc: userPick[0].desc,
-            tools: userPick[0].tools,
-            url: userPick[0].url,
-            gitHub: userPick[0].gitHub,
-            about: true
-        })
-    }
-
-    // Map all works and send to gallery deck for display
-    const deck= work.map(work => (
-        <GalleryDeck key={ work.id } id={ work.id } img={ work.img } alt={ work.alt } onClick={ handleClickEvent }/>
-    ))
-
-    // Render the gallery
-    return (
-        <section className='container col-9 mt-3 gallery'>
+   return ( 
+       <section className='container col-9-md mt-3 gallery'>
             <h3>
                 Work.
             </h3>
-            <Suspense fallback={ <Loading /> }>
-                <GalleryJumbo state={ selectedWork } />
-            </Suspense>
 
-            
-                <section className='row mt-5 gallery__deck justify-content-around'>
-                    <Suspense fallback={ <Loading /> }>
-                        { deck }
-                    </Suspense>
+            <Gallery>
+                {/* <Item
+                    original="https://placekitten.com/1024/768?image=1"
+                    thumbnail="https://placekitten.com/80/60?image=1"
+                    width="1024"
+                    height="768"
+                >
+                    {({ ref, open }) => (
+                        <img ref={ref} onClick={open} src="https://placekitten.com/80/60?image=1" />
+                    )}
+                </Item>
+                <Item
+                    original="https://placekitten.com/1024/768?image=2"
+                    thumbnail="https://placekitten.com/80/60?image=2"
+                    width="1024"
+                    height="768"
+                >
+                    {({ ref, open }) => (
+                        <img ref={ref} onClick={open} src="https://placekitten.com/80/60?image=2" />
+                    )}
+                </Item> */}
+                <section className='gallery__deck-container'>
+                    { deck }
                 </section>
-            
-            
-        </section>
+            </Gallery>
+         </section>
     );
 }
- 
-export default Gallery;
+
+export default MyGallery;
