@@ -1,5 +1,27 @@
 const work = [
     {
+        "id": 18,
+        "name": "React Test",
+        "url": "https://www.natemking.dev/react_test/",
+        "img": require("../components/Gallery/images/react-test.jpg"),
+        "gif": require("../components/Gallery/images/react-test.gif"),
+        "alt": "react test",
+        "gitHub": "https://github.com/natemking/react_test",
+        "tools": "CSS, React, Styled-Components",
+        "desc": "A React test found online. Criteria was given and everyting had to be built from scratch (see repo for more info on criteria). The test called for a CSS-in-JS framework. Styled components was chosen.",
+    },
+    {
+        "id": 17,
+        "name": "Javascript UI Test",
+        "url": "https://www.natemking.dev/ui_test/",
+        "img": require("../components/Gallery/images/ui-test.jpg"),
+        "gif": require("../components/Gallery/images/ui-test.gif"),
+        "alt": "js ui test",
+        "gitHub": "https://github.com/natemking/ui_test",
+        "tools": "HTML, CSS, Javascript",
+        "desc": "An old test that was used by a UX/UI developer department for possible new hires. The challenge is to create the page from scratch as per the instructions within 24 hours of beginning. The slider must be fully functional and the page mobile responsive. Only HTML, CSS, & Vanilla JS could be used. See the repo link for more criteria.",
+    },
+    {
         "id": 8,
         "name": "Rydr",
         "url": "https://rydr.vps.natemking.dev",
@@ -8,7 +30,7 @@ const work = [
         "alt": "ryder app",
         "gitHub": "https://github.com/natemking/rydr",
         "tools": "Group Project. My Role - Front-end: React (create user, create user profile, & update user profile functionality) 3rd party SaaS & Turing test integration. Back-end: Express.js, MongoDB, Mongoose, DB Schema design",
-        "desc": "A new tool to help artists review and see reviews of the venues they can play. Future development - A full blown social network for artists and venues. ",
+        "desc": "A new tool to help artists review and see reviews of the venues they can play. Future development - A full blown social network for artists and venues.",
     },
     {
         "id": 7,
