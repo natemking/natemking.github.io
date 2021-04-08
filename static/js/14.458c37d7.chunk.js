@@ -1,0 +1,2 @@
+(this["webpackJsonpportfolio_2.0"]=this["webpackJsonpportfolio_2.0"]||[]).push([[14],{138:function(e,t,s){"use strict";s.r(t);s(0);var a=s(133),c=(s(134),s(1));t.default=function(e){return Object(c.jsx)("section",{className:!0,children:Object(c.jsx)(a.LazyLoadImage,{alt:"Nate M Kings resume",effect:"blur",src:e.page})})}}}]);
+//# sourceMappingURL=14.458c37d7.chunk.js.map
