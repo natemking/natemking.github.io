@@ -7,9 +7,11 @@ import 'photoswipe/dist/default-skin/default-skin.css';
 import PhotoswipeUIDefault from 'photoswipe/dist/photoswipe-ui-default';
 import './style.css';
 
-const MyGallery = () => {
+const Gallery = () => {
+    /** Ref for the CustomGallery */
     const layoutRef = useRef()
 
+    /** HTML for the focus gallery */
     const deck = work.map(work => (
         <Item
             key={ work.id }
@@ -74,6 +76,7 @@ const MyGallery = () => {
         </Item>
     ));
 
+    /** Render Gallery */
     return (
         <section className='container col-9-md mt-3 gallery'>
             <h3>
@@ -102,4 +105,4 @@ const MyGallery = () => {
     );
 }
 
-export default MyGallery;
+export default Gallery;

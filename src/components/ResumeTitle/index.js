@@ -1,8 +1,9 @@
 import React from 'react';
 
+/** Props passed from ResumeContainer */
 const ResumeTitle = (props) => {
    const { pageNumber, nextPage, togglePageNumber } = props
-    // Render the resume title bar w/ a clickable icon to switch pages & a link to download resume.
+    /** Render the ResumeTitle  */
     return (
         <section className="container__title">
 
@@ -13,16 +14,16 @@ const ResumeTitle = (props) => {
             </section>
 
             <section>
-                {/* If the resusme is on page 1 show the following span: */}
+                { /* If the resusme is on page 1 show the following span: */ }
                 <span className={ pageNumber === 'pg 1' ? 'container__title-show' : 'container__title-hidden' }>{ pageNumber }</span>
-                {/* Click icon to switch pages & toggle page number */}
+                { /* Click icon to switch pages & toggle page number */ }
                 <i className="fas fa-arrows-alt-h" onClick={ () => { nextPage(); togglePageNumber(); }}></i>
-                {/* If the resusme is on page 2 show the following span: */}
+                { /* If the resusme is on page 2 show the following span: */ }
                 <span className={ pageNumber === 'pg 2' ? 'container__title-show' : 'container__title-hidden' }>{ pageNumber }</span>
             </section>
 
             <section>
-                {/* Downloadable PDF of resume */}
+                { /* Downloadable PDF of resume */ }
                 <a href="/misc/NateMKing-resume.pdf" download>
                     download
                     </a>

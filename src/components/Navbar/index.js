@@ -5,17 +5,17 @@ import './style.css'
 
 
 function Navbar() {
-    // State for window hash
+    /** State for window hash */
     const [hash, setHash] = useState(window.location.hash);
     
-    // Life cycle to set state to hash of current window
+    /** Set state to hash of current window */
     useEffect(() => {
         window.addEventListener('hashchange', () => {
            setHash(window.location.hash);
         })
     }, []);
 
-    // Render nave bar and make the current pages nav tab active
+    /** Render Navbar and set the current pages nav tab to active */
     return (
         <nav className="navbar navbar-expand navbar-light">
             <div>

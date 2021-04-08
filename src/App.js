@@ -14,7 +14,9 @@ const ContactPage = lazy(() => import('./pages/Contact'));
 
 
 function App() {
-  // Render navbar, bg image, all pages, & footer. Use code splitting and loading animation for slower connections. 
+  /** Render navbar, bg image, all pages, & footer. Use code 
+   * splitting and loading animation for slower connections. 
+  */
   return (
     <Router>
       <Suspense fallback={ <Loading /> }>

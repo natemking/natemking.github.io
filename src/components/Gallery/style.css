@@ -15,7 +15,7 @@
 }
 
 .gallery__jumbo-img-container{
-    width: 640px;
+    max-width: 640px;
     margin-top: 3rem;
 }
 
@@ -39,7 +39,7 @@
       margin: 0 auto;
 }
 
-.gallery__jumbo-text  a:hover {
+.gallery__jumbo-text a:hover {
     color: rgb(116, 102, 52);
     opacity: 1;
 }
@@ -65,7 +65,7 @@
 
 .gallery__deck-container img:hover {
     filter: brightness(100%);
-    transition: 0.3s;
+    transition: 0.3s ease-in;
     cursor: pointer;
 }
 
@@ -80,7 +80,6 @@
     text-align: center;
     padding: 1px 3px;
     
-
     /* Position the tooltip text */
     position: absolute;
     z-index: 1;
@@ -114,12 +113,25 @@
 }
 
 @media (max-width: 768px) {
-    .gallery__jumbo-text {
-        background: rgba(255,255,255,.5);
-        margin-top: 25px;
-    }   
-
-     .gallery__deck {
-        margin: 0;
+    .gallery__jumbo-container{
+        align-items: flex-start;
     }
+
+    .gallery__jumbo {
+        width: 80%;
+        padding: 0 20px;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10vh;
+    }
+    
+    .gallery__jumbo-img-container{
+        margin-top: 0;
+    }
+
+    .gallery__jumbo-text {
+        width: 100%;
+        margin-top: 25px;
+        padding-left: 0;
+    }   
 }

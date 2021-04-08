@@ -1,7 +1,8 @@
 import React from 'react';
 
+/** Props passed from FormContainer */
 const FormInput = ({ type, label, placeholder, onChange }) => {
-    // Render form input
+    /** Render FormInput */
     return ( 
         <>
             <label className='mt-3'>

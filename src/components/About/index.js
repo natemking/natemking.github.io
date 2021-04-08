@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css'
 
 const AboutContainer = () => {
-    // Render about page
+    /** Render AboutContainer */
     return (
         <section className="container-fluid col-md-6 about__container">
 
