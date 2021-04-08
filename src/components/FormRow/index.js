@@ -1,7 +1,8 @@
 import React from 'react';
 
+/** Props passed from FormContainer */
 const FormRow = (props) => {
-    // Render form row
+    /** Render FormRow */
     return (  
         <section className = "form-row mt-3" >
             { props.children }

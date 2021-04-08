@@ -5,7 +5,7 @@ import Loading from '../Loading';
 const Sidenav = lazy(() => import('../Sidenav'))
 
 const Container = (props) => {
-    // Render main container
+    /** Render MainContainer */
     return ( 
         <Suspense fallback={<Loading />} >
             <main className="wrapper">

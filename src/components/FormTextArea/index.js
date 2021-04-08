@@ -1,7 +1,8 @@
 import React from 'react';
 
+/** Props passed from FormContainer */
 const FormTextArea = ({ type, label, placeholder, onChange}) => {
-    // Render form text area
+    /** Render FormTextArea */
     return (
        <>
             <label>

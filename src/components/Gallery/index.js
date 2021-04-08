@@ -1,68 +1,108 @@
-import React, { useState, Suspense, lazy } from 'react';
-import './style.css'
+import React, { useRef, Suspense } from 'react';
 import Loading from '../Loading';
-import work from '../../utils/work'
-
-const GalleryJumbo = lazy(() => import('../GalleryJumbo'));
-const GalleryDeck = lazy(() => import('../GalleryDeck'));
+import work from '../../utils/work';
+import { CustomGallery, Item, DefaultLayout } from 'react-photoswipe-gallery';
+import 'photoswipe/dist/photoswipe.css';
+import 'photoswipe/dist/default-skin/default-skin.css';
+import PhotoswipeUIDefault from 'photoswipe/dist/photoswipe-ui-default';
+import './style.css';
 
 const Gallery = () => {
-    // State for project the user chooses
-    const [ selectedWork, setSelectedWork ] = useState({
-        gif:'',
-        alt: '',
-        name: '',
-        desc: '',
-        tools: '',
-        url: '',
-        gitHub: '',
-        about: false
-    })
+    /** Ref for the CustomGallery */
+    const layoutRef = useRef()
 
-    // On click set state to the project the user chose
-    const handleClickEvent = (e) => {
-        
-        let userPick = work.filter(work => (
-            work.id.toString() === e.target.id
-        ));
+    /** HTML for the focus gallery */
+    const deck = work.map(work => (
+        <Item
+            key={ work.id }
+            html={`
+                <section class='gallery__jumbo-container'>
+                    <section class='gallery__jumbo'>
+    
+                        <section class='gallery__jumbo-img-container'>
+                            <img src='${ work.gif.default }'></img>
+                        </section>
+    
+                        <section class='gallery__jumbo-text' >
+                            <h4 class='text-right'>${ work.name }</h4>
+                            <hr />
 
-        setSelectedWork({
-            gif: userPick[0].gif,
-            alt: userPick[0].alt,
-            name: userPick[0].name,
-            desc: userPick[0].desc,
-            tools: userPick[0].tools,
-            url: userPick[0].url,
-            gitHub: userPick[0].gitHub,
-            about: true
-        })
-    }
+                            <h5>
+                                About.
+                            </h5>
+                            <p>
+                                ${ work.desc }
+                            </p>
+                            <hr />
 
-    // Map all works and send to gallery deck for display
-    const deck= work.map(work => (
-        <GalleryDeck key={ work.id } id={ work.id } img={ work.img } alt={ work.alt } onClick={ handleClickEvent }/>
-    ))
+                            <h5>
+                                Tools.
+                            </h5>
+                            <p>
+                                ${ work.tools }
+                            </p>
+                            <hr />
 
-    // Render the gallery
+                            <p>
+                                ${ work.url ? 
+                                `<a href=${ work.url } target='_blank' rel='noreferrer'>Deployed App</a>`:
+                                '' }
+                            </p>
+                            <p>
+                                <a href=${ work.gitHub } target='_blank' rel='noreferrer'>
+                                    Git Repo
+                                </a>
+                            </p>
+
+                        </section>
+
+                    </section>
+
+                </section>
+            `}
+        >
+            {({ ref, open }) => (
+                <div id={ work.idName } className='gallery__deck-tooltip'>
+                        <img 
+                            ref={ ref } 
+                            onClick={ open } 
+                            src={ work.imgSmall.default } 
+                            alt={ work.alt } 
+                        />
+                        <span className='gallery__deck-tooltip-text'>{ work.name }</span>
+                    </div>
+            )}
+
+        </Item>
+    ));
+
+    /** Render Gallery */
     return (
-        <section className='container col-9 mt-3 gallery'>
+        <section className='container col-9-md mt-3 gallery'>
             <h3>
                 Work.
             </h3>
-            <Suspense fallback={ <Loading /> }>
-                <GalleryJumbo state={ selectedWork } />
-            </Suspense>
 
-            
-                <section className='row mt-5 gallery__deck justify-content-around'>
-                    <Suspense fallback={ <Loading /> }>
+            <Suspense fallback={ <Loading /> }>
+                <CustomGallery 
+                    layoutRef={ layoutRef } 
+                    ui={ PhotoswipeUIDefault }
+                >
+                    <section className='gallery__deck-container'>
                         { deck }
-                    </Suspense>
-                </section>
-            
-            
+                    </section>
+                </CustomGallery>
+           </Suspense>
+
+            <DefaultLayout
+                shareButton={ false }
+                fullscreenButton={ false }
+                zoomButton={ false }
+                ref={ layoutRef }
+            />
+
         </section>
     );
 }
- 
+
 export default Gallery;

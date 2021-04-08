@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css'
 
 const Home = () => {
-    // Render home page
+    /** Render Home page */
     return (
         <section className="home__container">
             <section className="home__title">

@@ -1,31 +1,137 @@
-.gallery__deck img {
-    filter: grayscale(70%);
-    border: 1px solid lightgray;
+.gallery__jumbo-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.gallery__deck img:hover {
-    filter: grayscale(0%);
-    cursor: pointer;
+.gallery__jumbo {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgba(255,255,255,.7);
+    text-align: justify;
 }
 
-.gallery__jumbo  a, a:focus, a:active {
+.gallery__jumbo-img-container{
+    max-width: 640px;
+    margin-top: 3rem;
+}
+
+.gallery__jumbo-img-container img {
+    width: 100%;
+    border: 1px solid rgba(255,255,255,.5);
+}
+
+.gallery__jumbo-text {
+    width: 30vw;
+    padding-left: 30px; 
+}
+
+.gallery__jumbo-text hr {
+    border:1px solid rgb(116, 102, 52);
+}
+
+.gallery__jumbo-text  a, a:focus, a:active {
       text-decoration: none; 
       color: inherit;
       margin: 0 auto;
 }
 
-.gallery__jumbo  a:hover {
+.gallery__jumbo-text a:hover {
     color: rgb(116, 102, 52);
     opacity: 1;
 }
 
-@media (max-width: 768px) {
-    .gallery__jumbo-text {
-        background: rgba(255,255,255,.5);
-        margin-top: 25px;
-    }   
 
-     .gallery__deck {
-        margin: 0;
+.gallery__deck-container {
+    margin: 10px 0px 40px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 15px 12px;
+}
+
+.gallery__deck-container img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 0px 0px 40px rgba(0,0,0,.4);
+    border-radius: 5px;
+    filter: brightness(90%);
+}
+
+.gallery__deck-container img:hover {
+    filter: brightness(100%);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.gallery__deck-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.gallery__deck-tooltip .gallery__deck-tooltip-text {
+    visibility: hidden;
+    color: rgb(116, 102, 52);
+    text-align: center;
+    padding: 1px 3px;
+    
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    right: 0;
+   
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.gallery__deck-tooltip:hover .gallery__deck-tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+#react-test {
+    grid-area: 1 / 1 / span 2 / span 2;
+}
+
+#rydr {
+    grid-area: 3 / 3 / span 2 / span 2;
+}
+
+#weather-dashboard {
+    grid-area: 5 / 1 / span 2 / span 2;
+}
+
+#password-generator {
+    grid-area: 7 / 3 / span 2 / span 2;
+}
+
+@media (max-width: 768px) {
+    .gallery__jumbo-container{
+        align-items: flex-start;
     }
+
+    .gallery__jumbo {
+        width: 80%;
+        padding: 0 20px;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10vh;
+    }
+    
+    .gallery__jumbo-img-container{
+        margin-top: 0;
+    }
+
+    .gallery__jumbo-text {
+        width: 100%;
+        margin-top: 25px;
+        padding-left: 0;
+    }   
 }

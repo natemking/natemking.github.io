@@ -41,6 +41,10 @@ react-lazy-load-image-component -> img lazy load w/ effects
 react-router-dom -> routing
 styled-components -> used in FadeIn effect
 
+added in v1.1.0
+photoswipe
+react-photoswipe-gallery
+
 ```
 ## Screenshots
 

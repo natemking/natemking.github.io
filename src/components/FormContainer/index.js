@@ -10,14 +10,35 @@ import Alert from '../Alert';
 
 
 const ContactFormContainer = () => {
-    // State for user inputs, alert for email send status, & btn disable
+    /** State for user inputs */
     const [userName, setUserName] = useState('');
     const [userEmail, setUserEmail] = useState('');
     const [userMessage, setUserMessage] = useState('');
-    const [emailAlert, setEmailAlert] = useState({ alert: false, type: false, msg:''});
+    /** State for email send status for status alert */
+    const [emailAlert, setEmailAlert] = useState({ 
+        alert: false, 
+        type: false, 
+        msg:''
+    });
+    /**  State for btn availability */
     const [btnDisable, setBtnDisable] = useState(true)
 
-    // Set state of user inputs
+    /** 
+     * Setup email template per state of users inputs 
+     * @type {Object}
+     */
+    const templateParams = {
+        from_name: userName,
+        reply_to: userEmail,
+        message: userMessage
+    }
+
+    /**
+     * Function to set the state of the user inputs
+     * 
+     * @param {Object} e event object
+     * @returns {string} the users input to state
+     */
     const handleInputChange = e => {
         const  { name, value } = e.target;
         switch ( name ) {
@@ -35,45 +56,52 @@ const ContactFormContainer = () => {
         }
     }
 
-    // Set state of button to active if captcha is passed
-    function captchaOnChange() {
+    /** 
+     * Function to set the btn availability state when the captcha 
+     * is passed
+     */
+    const  captchaOnChange = () => {
         setBtnDisable(false)
     };
 
-    // On submit send email to natemking@gmail.com using emailjs
+
+    /** 
+     * Function that sends email via emailjs and alerts the user 
+     * of the send status. Formatting docs:
+     * https://www.emailjs.com/docs/examples/reactjs/
+     * 
+     * @returns {string} console.log with the status of the email
+     */
+    const sendEmail = async () => {
+        try {
+            const response = await emailjs.send(
+                process.env.REACT_APP_EMJS_SID,
+                process.env.REACT_APP_EMJS_TID,
+                templateParams,
+                process.env.REACT_APP_EMJS_UID
+            );
+            console.log('SUCCESS!', response.status, response.text);
+            document.querySelector('form').reset();
+            setEmailAlert({ alert: true, type: true, msg: 'Thanks for reaching out. I\'ll be in touch shortly.' })
+
+        } catch (err) {
+            console.error('FAILED...', err)
+            document.querySelector('form').reset();
+            setEmailAlert({ alert: true, type: false, msg: 'Aw $hit. Somethings broke. Please send me an email to natemking@gmail.com' })
+        }
+    };
+
+    /**
+     * Function that on form submit call the sendEmail function 
+     * 
+     * @param {Object} e  event object
+     */
     const handleFormSubmit = e => {
         e.preventDefault();
-
-        // Set email template per state of users inputs
-        const templateParams = {
-            from_name: userName,
-            reply_to: userEmail,
-            message: userMessage
-        }
-
-        //Send email and alert the user of the send status
-        const sendEmail = async () => {
-            try {
-                const response = await emailjs.send(
-                    process.env.REACT_APP_EMJS_SID, 
-                    process.env.REACT_APP_EMJS_TID, 
-                    templateParams, 
-                    process.env.REACT_APP_EMJS_UID
-                );
-                console.log('SUCCESS!', response.status, response.text);
-                document.querySelector('form').reset();
-                setEmailAlert({ alert: true,  type: true, msg: 'Thanks for reaching out. I\'ll be in touch shortly.' })
-                
-            } catch (err) { 
-                console.error('FAILED...', err)
-                document.querySelector('form').reset();
-                setEmailAlert({ alert: true, type: false, msg: 'Aw $hit. Somethings broke. Please send me an email to natemking@gmail.com' })
-            }
-        };
         sendEmail();
     }
 
-    //Render the contact form
+    /** Render the FormContainer */
     return ( 
         <section className="container-sm col-md-8 col-lg-6 mt-3 form__container">
 

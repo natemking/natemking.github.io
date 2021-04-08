@@ -1,4 +1,7 @@
-// FadeIn.js by Josh Comeau https://www.joshwcomeau.com/snippets/react-components/fade-in/
+/**FadeIn.js by Josh Comeau 
+ * https://www.joshwcomeau.com/snippets/react-components/fade-in/ 
+ */
+
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 const fadeIn = keyframes`
