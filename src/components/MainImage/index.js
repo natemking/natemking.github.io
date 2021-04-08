@@ -5,17 +5,14 @@ const MainImage = () => {
     const [imgPosition, setImgPosition] = useState('absolute');
     
     const hashLocation = () => {
-        console.log(window.location.hash);
         window.location.hash === '#/portfolio' || window.location.hash === '#/resume' ?
-            setImgPosition('fixed') :
-            setImgPosition('absolute');
+        setImgPosition('fixed') :
+        setImgPosition('absolute');
     };
 
     useEffect(() => {
-
         hashLocation();
         window.addEventListener('hashchange', hashLocation)
-        
     },[]);
 
     // Render main bg image

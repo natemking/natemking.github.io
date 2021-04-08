@@ -1,19 +1,18 @@
-import React, { useState, Suspense, lazy } from 'react';
-import './style.css'
+import React, { useRef, Suspense } from 'react';
 import Loading from '../Loading';
-import work from '../../utils/work'
-import 'photoswipe/dist/photoswipe.css'
-import 'photoswipe/dist/default-skin/default-skin.css'
-
-import { Gallery, Item } from 'react-photoswipe-gallery'
-  
+import work from '../../utils/work';
+import { CustomGallery, Item, DefaultLayout } from 'react-photoswipe-gallery';
+import 'photoswipe/dist/photoswipe.css';
+import 'photoswipe/dist/default-skin/default-skin.css';
+import PhotoswipeUIDefault from 'photoswipe/dist/photoswipe-ui-default';
+import './style.css';
 
 const MyGallery = () => {
+    const layoutRef = useRef()
+
     const deck = work.map(work => (
-       
-        
         <Item
-            key={work.id}
+            key={ work.id }
             html={`
                 <section class='gallery__jumbo-container'>
                     <section class='gallery__jumbo'>
@@ -25,6 +24,7 @@ const MyGallery = () => {
                         <section class='gallery__jumbo-text' >
                             <h4 class='text-right'>${ work.name }</h4>
                             <hr />
+
                             <h5>
                                 About.
                             </h5>
@@ -32,16 +32,18 @@ const MyGallery = () => {
                                 ${ work.desc }
                             </p>
                             <hr />
+
                             <h5>
                                 Tools.
                             </h5>
                             <p>
-                                ${work.tools}
+                                ${ work.tools }
                             </p>
                             <hr />
+
                             <p>
                                 ${ work.url ? 
-                                `<a href=${ work.url } target='_blank' rel='noreferrer'>Deploy</a>`:
+                                `<a href=${ work.url } target='_blank' rel='noreferrer'>Deployed App</a>`:
                                 '' }
                             </p>
                             <p>
@@ -49,13 +51,24 @@ const MyGallery = () => {
                                     Git Repo
                                 </a>
                             </p>
+
                         </section>
+
                     </section>
+
                 </section>
             `}
         >
             {({ ref, open }) => (
-                <img ref={ref} onClick={open} src={work.imgSmall.default} alt={work.alt} id={work.idName} />
+                <div id={ work.idName } className='gallery__deck-tooltip'>
+                        <img 
+                            ref={ ref } 
+                            onClick={ open } 
+                            src={ work.imgSmall.default } 
+                            alt={ work.alt } 
+                        />
+                        <span className='gallery__deck-tooltip-text'>{ work.name }</span>
+                    </div>
             )}
 
         </Item>
@@ -67,11 +80,23 @@ const MyGallery = () => {
                 Work.
             </h3>
 
-            <Gallery>
-                <section className='gallery__deck-container'>
-                    {deck}
-                </section>
-            </Gallery>
+            <Suspense fallback={ <Loading /> }>
+                <CustomGallery 
+                    layoutRef={ layoutRef } 
+                    ui={ PhotoswipeUIDefault }
+                >
+                    <section className='gallery__deck-container'>
+                        { deck }
+                    </section>
+                </CustomGallery>
+           </Suspense>
+
+            <DefaultLayout
+                shareButton={ false }
+                fullscreenButton={ false }
+                zoomButton={ false }
+                ref={ layoutRef }
+            />
 
         </section>
     );

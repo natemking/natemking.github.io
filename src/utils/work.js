@@ -1,5 +1,5 @@
 const work = [
-    /** Smalls are sized @240px height or 480px */
+    /** Smalls are sized @240px height, large @480px height */
     {
         "id": 18,
         "name": "React Test",
@@ -11,7 +11,7 @@ const work = [
         "alt": "react test",
         "gitHub": "https://github.com/natemking/react_test",
         "tools": "CSS, React, Styled-Components",
-        "desc": "A React test found online. Criteria was given and everyting had to be built from scratch (see repo for more info on criteria). The test called for a CSS-in-JS framework. Styled components was chosen.",
+        "desc": "A React test found online. Criteria was given and everything had to be built from scratch (see repo for more info on criteria). The test called for a CSS-in-JS framework. Styled components was chosen.",
     },
     {
         "id": 17,
@@ -24,7 +24,7 @@ const work = [
         "alt": "js ui test",
         "gitHub": "https://github.com/natemking/ui_test",
         "tools": "HTML, CSS, Javascript",
-        "desc": "An old test that was used by a UX/UI developer department for possible new hires. The challenge is to create the page from scratch as per the instructions within 24 hours of beginning. The slider must be fully functional and the page mobile responsive. Only HTML, CSS, & Vanilla JS could be used. See the repo link for more criteria.",
+        "desc": "A test that was once used by a Comcast UX/UI dev department for possible new hires. The challenge is to create the page from scratch as per the instructions within 24 hours of beginning. The slider must be fully functional and the page mobile responsive. Only HTML, CSS, & Vanilla JS could be used. See the repo link for more criteria.",
     },
     {
         "id": 8,
