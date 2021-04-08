@@ -6,7 +6,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 const ResumeImage = (props) => {
     /** Render ResumeImage w/ lazy load and blur effect */
     return ( 
-        <section className>
+        <section>
             <LazyLoadImage
                 alt="Nate M Kings resume"
                 effect="blur"
