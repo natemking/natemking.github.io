@@ -14,29 +14,22 @@ const MyGallery = () => {
         
         <Item
             key={work.id}
-            // id={work.id}
-            // original={work.gif.default}
-            // thumbnail={work.imgSmall.default}
-            // alt={work.alt}
-            // width='640'
-            // height='430'
-            // title={work.name}
             html={`
                 <section class='gallery__jumbo-container'>
-                    <section class='mt-3 gallery__jumbo'>
+                    <section class='gallery__jumbo'>
     
-                        <section className='mt-5'>
-                            <img src='${work.gif.default}'></img>
+                        <section class='gallery__jumbo-img-container'>
+                            <img src='${ work.gif.default }'></img>
                         </section>
     
                         <section class='gallery__jumbo-text' >
-                            <h4 class='text-right'>${work.name}</h4>
+                            <h4 class='text-right'>${ work.name }</h4>
                             <hr />
                             <h5>
                                 About.
                             </h5>
                             <p>
-                                ${work.desc}
+                                ${ work.desc }
                             </p>
                             <hr />
                             <h5>
@@ -47,12 +40,12 @@ const MyGallery = () => {
                             </p>
                             <hr />
                             <p>
-                                <a href=${ work.url } target='_blank' rel='noreferrer'>
-                                    Deploy
-                                </a> 
+                                ${ work.url ? 
+                                `<a href=${ work.url } target='_blank' rel='noreferrer'>Deploy</a>`:
+                                '' }
                             </p>
                             <p>
-                                <a href=${work.gitHub} target='_blank' rel='noreferrer'>
+                                <a href=${ work.gitHub } target='_blank' rel='noreferrer'>
                                     Git Repo
                                 </a>
                             </p>
