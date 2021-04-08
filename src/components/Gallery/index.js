@@ -7,6 +7,11 @@ import 'photoswipe/dist/default-skin/default-skin.css';
 import PhotoswipeUIDefault from 'photoswipe/dist/photoswipe-ui-default';
 import './style.css';
 
+/** By default Photoswipe locks scrolling when closeOnScroll &
+* closeOnVerticalDrag are set to false. Fix found here: 
+* https://github.com/dimsemenov/PhotoSwipe/issues/1291
+*/
+
 const Gallery = () => {
     /** Ref for the CustomGallery */
     const layoutRef = useRef()
@@ -16,7 +21,7 @@ const Gallery = () => {
         <Item
             key={ work.id }
             html={`
-                <section class='gallery__jumbo-container'>
+                <section class='gallery__jumbo-container modal-scroll'>
                     <section class='gallery__jumbo'>
     
                         <section class='gallery__jumbo-img-container'>
@@ -87,6 +92,11 @@ const Gallery = () => {
                 <CustomGallery 
                     layoutRef={ layoutRef } 
                     ui={ PhotoswipeUIDefault }
+                    options={{
+                        closeOnScroll: false,
+                        closeOnVerticalDrag: false,
+                        preload: [1,3]
+                    }}
                 >
                     <section className='gallery__deck-container'>
                         { deck }

@@ -5,6 +5,14 @@
     align-items: center;
 }
 
+.modal-scroll {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    touch-action: auto;
+    overscroll-behavior: none; /* prevents scroll bubbling to window */
+}
+
 .gallery__jumbo {
     max-width: 1200px;
     display: flex;
@@ -119,7 +127,6 @@
 
     .gallery__jumbo {
         width: 80%;
-        padding: 0 20px;
         flex-direction: column;
         justify-content: center;
         margin-top: 10vh;
@@ -133,5 +140,9 @@
         width: 100%;
         margin-top: 25px;
         padding-left: 0;
-    }   
+    }
+
+    .gallery__deck-tooltip:hover .gallery__deck-tooltip-text {
+    visibility: hidden;
+    }
 }

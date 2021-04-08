@@ -4,7 +4,7 @@ import './style.css'
 const AboutContainer = () => {
     /** Render AboutContainer */
     return (
-        <section className="container-fluid col-md-6 about__container">
+        <section className="container-fluid col-md-9 col-lg-6 about__container">
 
             <h3>
                 About.
