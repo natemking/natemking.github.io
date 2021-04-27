@@ -36,7 +36,7 @@ const work = [
         "gif": require("../components/Gallery/images/rydr.gif"),
         "alt": "ryder app",
         "gitHub": "https://github.com/natemking/rydr",
-        "tools": "Group Project. My Role =>  <br><u><i>Front-end:</i></u> React (create user, create user profile, & update user profile functionality) 3rd party SaaS & Turing test integration. <br><u><i>Back-end:</u></i> Express.js, MongoDB, Mongoose, DB Schema design",
+        "tools": "Group Project. My Role =>  <br><u><em>Front-end:</em></u> React (create user, create user profile, & update user profile functionality) 3rd party SaaS & Turing test integration. <br><u><em>Back-end:</em></u> Express.js, MongoDB, Mongoose, DB Schema design",
         "desc": "A new tool to help artists review and see reviews of the venues they can play. Future development - A full blown social network for artists and venues.",
     },
     {
@@ -88,7 +88,7 @@ const work = [
         "gif": require("../components/Gallery/images/shop-n-chef.gif"),
         "alt": "shop & chef app",
         "gitHub": "https://github.com/natemking/shop_n_chef",
-        "tools": "Group Project. My role => <br><u><i>Front-end:</u></i> jQuery. <br><u><i>Back-end:</u></i> Node.js, Express.js, MySql, Sequelize",
+        "tools": "Group Project. My role => <br><u><em>Front-end:</em></u> jQuery. <br><u><em>Back-end:</em></u> Node.js, Express.js, MySql, Sequelize",
         "desc": "Add items to a shopping list then search for a recipe and ingredients from those recipes to your list wth a simple click. ",
     },
     {
