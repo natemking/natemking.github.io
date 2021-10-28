@@ -1,6 +1,19 @@
 const work = [
     /** Smalls are sized @240px height, large @480px height */
     {
+        "id": 19,
+        "name": "FlowerLeed",
+        "idName": "flowerleed",
+        "url": "https://www.flowerleed.com",
+        "img": require("../components/Gallery/images/flowerleed.jpg"),
+        "imgSmall": require("../components/Gallery/images/flowerleed-small.jpg"),
+        "gif": require("../components/Gallery/images/flowerleed.gif"),
+        "alt": "flowerleed.com",
+        "gitHub": "https://github.com/natemking/",
+        "tools": "React, Styled Components, Node.js, Express.js, MongoDB, Mongoose, Docker",
+        "desc": "A React based resource for PA Medical Marijuana patients to source the current pricing of products in their chosen range within the state helping them to shop smarter.",
+    },
+    {
         "id": 18,
         "name": "React Test",
         "idName": "react-test",

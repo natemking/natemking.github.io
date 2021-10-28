@@ -1,5 +1,5 @@
 import React, { Suspense, lazy  } from "react";
-import { HashRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import MainContainer from './components/MainContainer';
@@ -24,11 +24,14 @@ function App() {
           <Navbar />
             <MainContainer>
             
-              <Route exact path="/" component={ HomePage } />
-              <Route exact path="/about" component={ AboutPage } />
-              <Route exact path="/portfolio" component={ PortfolioPage } />
-              <Route exact path="/resume" component={ ResumePage } />
-              <Route exact path="/contact" component={ ContactPage } />
+              <Switch>
+                <Route exact path="/" component={ HomePage } />
+                <Route exact path="/about" component={ AboutPage } />
+                <Route exact path="/portfolio" component={ PortfolioPage } />
+                {/* <Route exact path="/resume" component={ ResumePage } /> */}
+                <Route exact path="/contact" component={ ContactPage } />
+                <Route component={ PortfolioPage } />
+              </Switch>
               
             </MainContainer>
           <Footer />
