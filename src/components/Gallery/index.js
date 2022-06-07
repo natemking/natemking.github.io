@@ -53,16 +53,15 @@ const Gallery = () => {
                                 `<a href=${ work.url } target='_blank' rel='noreferrer'>Deployed App</a>`:
                                 '' }
                             </p>
-                            <p>
-                                <a href=${ work.gitHub } target='_blank' rel='noreferrer'>
-                                    Git Repo
-                                </a>
-                            </p>
-
+                            ${work.gitHub && 
+                                `<p>
+                                    <a href=${ work.gitHub } target='_blank' rel='noreferrer'>
+                                        Git Repo
+                                    </a>
+                                </p>`
+                            }
                         </section>
-
                     </section>
-
                 </section>
             `}
         >
