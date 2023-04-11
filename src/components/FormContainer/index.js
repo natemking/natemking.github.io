@@ -81,7 +81,7 @@ const ContactFormContainer = () => {
                 templateParams,
                 process.env.REACT_APP_EMJS_UID
             );
-            // console.log('SUCCESS!', response.status, response.text);
+            console.log('SUCCESS!', response.status, response.text);
             document.querySelector('form').reset();
             setEmailAlert({ alert: true, type: true, msg: 'Thanks for reaching out. I\'ll be in touch shortly.' })
 
