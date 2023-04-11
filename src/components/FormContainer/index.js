@@ -7,6 +7,7 @@ import FormRow from '../FormRow';
 import FormTextArea from '../FormTextArea';
 import SubmitBtn from '../SubmitBtn';
 import Alert from '../Alert';
+require('dotenv').config()
 
 
 const ContactFormContainer = () => {
@@ -80,14 +81,14 @@ const ContactFormContainer = () => {
                 templateParams,
                 process.env.REACT_APP_EMJS_UID
             );
-            console.log('SUCCESS!', response.status, response.text);
+            // console.log('SUCCESS!', response.status, response.text);
             document.querySelector('form').reset();
             setEmailAlert({ alert: true, type: true, msg: 'Thanks for reaching out. I\'ll be in touch shortly.' })
 
         } catch (err) {
             console.error('FAILED...', err)
             document.querySelector('form').reset();
-            setEmailAlert({ alert: true, type: false, msg: 'Aw $hit. Somethings broke. Please send me an email to natemking@gmail.com' })
+            setEmailAlert({ alert: true, type: false, msg: 'Aw man. Somethings broke. Please send me an email to natemking@gmail.com' })
         }
     };
 
