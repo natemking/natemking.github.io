@@ -11,11 +11,11 @@ const AboutContainer = () => {
             </h3>
             
             <p>
-                Full-stack developer with a fifteen year IT management career background. The decision to leave IT and pursue development was, not only, an easy one but a logical one. The years I spent honing in my prowess as a master troubleshooter makes this pivot into the problem-solving oriented world of development a no-brainer. All-the-while allowing me to explore the creative side of tech vs. the "Is it on or off?" rut of IT support.
+                Professional full-stack developer focusing on UI in the React world with a fifteen year IT management career background. The decision to leave IT and pursue development was, not only, an easy one but a logical one. The years I spent honing in my prowess as a master troubleshooter makes this pivot into the problem-solving oriented world of development a no-brainer. All-the-while allowing me to explore the creative side of tech vs. the "Is it on or off?" rut of IT support. Now a full fledged professional developer who can say "I love what I do".
             </p>
 
             <p>
-                Here you will find the work that I have built and curated to showcase the skillset that I now have honed as a developer.
+                Here you will find the work that I have built professionally and in my educational phase. Growth and progress are important in their field and while some of my older projects can be a bit embarrassing, it is necessary to show my development.
             </p>
 
             <p>

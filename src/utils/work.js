@@ -1,17 +1,32 @@
 const work = [
     /** Smalls are sized @240px height, large @480px height */
     {
-        "id": 22,
-        "name": "Farmers Business Network",
-        "idName": "fbn",
-        "url": "https://lp.fbn.com/land-financing",
-        "img": require("../components/Gallery/images/fbn.jpg"),
-        "imgSmall": require("../components/Gallery/images/fbn.jpg"),
-        "gif": require("../components/Gallery/images/fbn.gif"),
-        "alt": "fbn land financing landing page",
+        "id": 23,
+        "name": "myCITC",
+        "idName": "mycitc",
+        "url": "https://mycitc.com/",
+        "img": require("../components/Gallery/images/mycitc.jpg"),
+        "imgSmall": require("../components/Gallery/images/mycitc.jpg"),
+        "gif": require("../components/Gallery/images/mycitc.gif"),
+        "alt": "myCITC portal",
         "gitHub": "",
-        "tools": "Next.js, Tailwind, Contentful, Vercel",
-        "desc": "Multiple landing pages for Farmers Business Network loan options marketing Campaign.",
+        "tools": "Typescript, Next.JS, Tailwind, DaisyUI, RJSF, Tanstack Table, SWR, OpenApi, Next Auth",
+        "desc": "Built frontend from ground up using Next.JS & Tailwind. All components built in house. Integrated with API's written by backend team. Full scale authentication integrated w/ Azure Cloud Services. Team lead for front end devs. Portal built for staff and participant. Gif from Test server w/ fake data as prod contains sensitive information.",
+        "type": "pro" 
+    },
+    {
+        "id": 22,
+        "name": "When To Test IRC",
+        "idName": "wtt-irc",
+        "url": "https://whentotest.org",
+        "img": require("../components/Gallery/images/wtt.jpg"),
+        "imgSmall": require("../components/Gallery/images/wtt.jpg"),
+        "gif": require("../components/Gallery/images/wtt.gif"),
+        "alt": "when to test individual risk calculator",
+        "gitHub": "",
+        "tools": "Next.JS, TypeScript, Contenful, Tailwind, MUI, AWS",
+        "desc": "Built the React based Individual Covid Calculator. Worked w/ MIT Scientist to translate their COVID calculator into TypeScript. Integrated all content with Contentful CMS. MUI component library used.",
+        "type": "pro"
     },
     {
         "id": 21,
@@ -25,22 +40,10 @@ const work = [
         "gitHub": "",
         "tools": "HTML, JS, jQuery, SASS,  LifeRay, Docker",
         "desc": "Homepage redesign build. Created many reusable fragments, application display templates, & web content templates that allow the client to reuse on other subsequent pages all wrapped in a new modern theme.",
+        "type": "pro"
     },
     {
         "id": 20,
-        "name": "When To Test IRC",
-        "idName": "wtt-irc",
-        "url": "https://whentotest.org/individual-calculator/",
-        "img": require("../components/Gallery/images/wtt.jpg"),
-        "imgSmall": require("../components/Gallery/images/wtt.jpg"),
-        "gif": require("../components/Gallery/images/wtt.gif"),
-        "alt": "when to test individual risk calculator",
-        "gitHub": "",
-        "tools": "React, SASS, JS, HTML, LifeRay, Docker, AWS",
-        "desc": "Built the React based Individual Covid Calculator. Improve, fix, & maintain React code for the organization calculator. Improve & maintain theme, pages, & fragments inside the LifeRay build. Deploy to test & production environments.",
-    },
-    {
-        "id": 19,
         "name": "FlowerLeed",
         "idName": "flowerleed",
         "url": "https://www.flowerleed.com",
@@ -51,6 +54,21 @@ const work = [
         "gitHub": "https://github.com/natemking/",
         "tools": "React, Styled Components, Node.js, Express.js, MongoDB, Mongoose, Docker",
         "desc": "A React based resource for PA Medical Marijuana patients to source the current pricing of products in their chosen range within the state helping them to shop smarter.",
+        "type": "pro"
+    },
+    {
+        "id": 19,
+        "name": "Farmers Business Network",
+        "idName": "fbn",
+        "url": "",
+        "img": require("../components/Gallery/images/fbn.jpg"),
+        "imgSmall": require("../components/Gallery/images/fbn.jpg"),
+        "gif": require("../components/Gallery/images/fbn.gif"),
+        "alt": "fbn land financing landing page",
+        "gitHub": "",
+        "tools": "Next.js, Tailwind, Contentful, Vercel",
+        "desc": "Multiple landing pages for Farmers Business Network loan options marketing Campaign. Site discontinued by client as campaign has expired.",
+        "type": "pro"
     },
     {
         "id": 18,
@@ -64,6 +82,7 @@ const work = [
         "gitHub": "https://github.com/natemking/react_test",
         "tools": "CSS, React, Styled-Components",
         "desc": "A React test found online. Criteria was given and everything had to be built from scratch (see repo for more info on criteria). The test called for a CSS-in-JS framework. Styled components was chosen.",
+        "type": "ed"
     },
     {
         "id": 17,
@@ -77,6 +96,7 @@ const work = [
         "gitHub": "https://github.com/natemking/ui_test",
         "tools": "HTML, CSS, Javascript",
         "desc": "A test that was once used by a Comcast UX/UI dev department for possible new hires. The challenge is to create the page from scratch as per the instructions within 24 hours of beginning. The slider must be fully functional and the page mobile responsive. Only HTML, CSS, & Vanilla JS could be used. See the repo link for more criteria.",
+        "type": "ed"
     },
     {
         "id": 8,
@@ -90,6 +110,7 @@ const work = [
         "gitHub": "https://github.com/natemking/rydr",
         "tools": "Group Project. My Role =>  <br><u><em>Front-end:</em></u> React (create user, create user profile, & update user profile functionality) 3rd party SaaS & Turing test integration. <br><u><em>Back-end:</em></u> Express.js, MongoDB, Mongoose, DB Schema design",
         "desc": "A new tool to help artists review and see reviews of the venues they can play. Future development - A full blown social network for artists and venues.",
+        "type": "ed"
     },
     {
         "id": 7,
@@ -103,6 +124,7 @@ const work = [
         "gitHub": "https://github.com/natemking/book_finder",
         "tools": "HTML, CSS, BootStrap, Javascript, Node.js, Express.js, MongoDB, React",
         "desc": "PWA that you can search for books using the Google Books API & save them to your library.",
+        "type": "ed"
     },
     {
         "id": 6,
@@ -115,7 +137,8 @@ const work = [
         "alt": "employee directory app",
         "gitHub": "https://github.com/natemking/employee_directory",
         "tools": "CSS, Bootstrap, JavaScript, React",
-        "desc": "A simple employee directory app built with React that allows for dynamic sorting and searching. ",
+        "desc": "A simple employee directory app built with React that allows for dynamic sorting and searching.",
+        "type": "ed"
     },
     {
         "id": 1,
@@ -129,6 +152,7 @@ const work = [
         "gitHub": "https://github.com/natemking/offline_budget_tracker",
         "tools": "HTML, CSS, Javascript, Node.js, Express.js, MongoDB, Mongoose, WebPack",
         "desc": "A simple to use finance tracker with charts to track your categorized spending",
+        "type": "ed"
     },
     {
         "id": 4,
@@ -141,7 +165,8 @@ const work = [
         "alt": "shop & chef app",
         "gitHub": "https://github.com/natemking/shop_n_chef",
         "tools": "Group Project. My role => <br><u><em>Front-end:</em></u> jQuery. <br><u><em>Back-end:</em></u> Node.js, Express.js, MySql, Sequelize",
-        "desc": "Add items to a shopping list then search for a recipe and ingredients from those recipes to your list wth a simple click. ",
+        "desc": "Add items to a shopping list then search for a recipe and ingredients from those recipes to your list wth a simple click.",
+        "type": "ed"
     },
     {
         "id": 9,
@@ -155,6 +180,7 @@ const work = [
         "gitHub": "https://github.com/natemking/workout_tracker",
         "tools": "Node.js, Express.js, MongoDB, Mongoose",
         "desc": "Track your workouts on a daily basis then see statics and charts based upon the last 7 days of working out.",
+        "type": "ed"
     },
     {
         "id": 11,
@@ -168,6 +194,7 @@ const work = [
         "gitHub": "https://github.com/natemking/burger_banquet",
         "tools": "HTML, CSS, BootStrap, Node.js, Express.js, Handlebars, MySQL",
         "desc": "Burger app that you can add burgers to your menu and mark devoured when you eat them.",
+        "type": "ed"
     },
     {
         "id": 15,
@@ -181,6 +208,7 @@ const work = [
         "gitHub": "https://github.com/natemking/employee_tracker",
         "tools": "Node.js, Inquirer, MySQL",
         "desc": "Track your employees with this easy to use CLI app. All employee info stored in a MySQL database.",
+        "type": "ed"
     },
     {
         "id": 2,
@@ -194,6 +222,7 @@ const work = [
         "gitHub": "https://github.com/natemking/note_taker",
         "tools": "HTML, CSS, Bootstrap, jQuery, Node.js, Express.js",
         "desc": "An easy way to keep notes stored in local storage.",
+        "type": "ed"
     },
     {
         "id": 14,
@@ -207,6 +236,7 @@ const work = [
         "gitHub": "https://github.com/natemking/coding_team_template_engine",
         "tools": "HTML, CSS, BootStrap, Node.js, Inquirer",
         "desc": "Use CLI to easily add your team and then output that information to a designated HTML file for publishing.",
+        "type": "ed"
     },
     {
         "id": 16,
@@ -220,6 +250,7 @@ const work = [
         "gitHub": "https://github.com/natemking/nodejs_readme_generator",
         "tools": "Node.js, Inquirer",
         "desc": "CLI app utilizing node.js to walk a user through generating a README markdown file.",
+        "type": "ed"
     },
     {
         "id": 5,
@@ -233,6 +264,7 @@ const work = [
         "gitHub": "https://github.com/natemking/THme",
         "tools": "Group Project. My role => jQuery & API mgmt",
         "desc": "Helping medical Cannabis patients by recommending strains per certain ailments as well as recommending other herbal remedies.",
+        "type": "ed"
     },
     {
         "id": 12,
@@ -246,6 +278,7 @@ const work = [
         "gitHub": "https://github.com/natemking/weather_dashboard",
         "tools": "HTML, CSS, BootStrap, jQuery, REST API",
         "desc": "Search for the weather and seven day forecast locally or internationally.",
+        "type": "ed"
     },
     {
         "id": 13,
@@ -259,6 +292,7 @@ const work = [
         "gitHub": "https://github.com/natemking/work_day_planner",
         "tools": "HTML, CSS, BootStrap, jQuery",
         "desc": "Plan out your 9-5 workday with live time-keeping. Grey for past, red for present, green for future.",
+        "type": "ed"
     },
     {
         "id": 10,
@@ -272,6 +306,7 @@ const work = [
         "gitHub": "https://github.com/natemking/javascript_trivia",
         "tools": "HTML, CSS, BootStrap, Javascript",
         "desc": "A fun 10 question trivia game on Javascript built with vanilla javascript. Reach the end without going below 0 points and save your score!",
+        "type": "ed"
     },
     {
         "id": 3,
@@ -285,6 +320,7 @@ const work = [
         "gitHub": "https://github.com/natemking/pw_generator",
         "tools": "HTML, CSS, Bootstrap, Javascript",
         "desc": "A fun, stylized random password generator which compiles per user input",
+        "type": "ed"
     },
 ]
 

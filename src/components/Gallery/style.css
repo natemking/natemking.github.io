@@ -57,7 +57,6 @@
     margin: 10px 0px 40px 0px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, 1fr);
     grid-gap: 15px 12px;
 }
 
@@ -104,29 +103,20 @@
     opacity: 1;
 }
 
-#fbn {
+#mycitc {
     grid-area: 1 / 1 / span 2 / span 2;
 }
 
-#vincennes-university  {
+#wtt-irc {
     grid-area: 1 / 3 / span 2 / span 2;
 }
 
-#wtt-irc {
+#vincennes-university  {
     grid-area: 3 / 1 / span 2 / span 2;
 }
 
 #flowerleed {
     grid-area: 3 / 3 / span 2 / span 2;
-}
-
-
-#password-generator {
-    grid-area: 6 / 3 / span 2 / span 2;
-}
-
-#weather-dashboard {
-    grid-area: 9 / 1 / span 2 / span 2;
 }
 
 @media (max-width: 768px) {
