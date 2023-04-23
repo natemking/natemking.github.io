@@ -25,6 +25,7 @@ const MainImage = () => {
     useEffect(() => {
         hashLocation();
         window.addEventListener('hashchange', hashLocation)
+        return () => window.removeEventListener('hashchange', hashLocation);
     },[]);
 
     /** Render MainImage */
