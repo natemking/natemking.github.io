@@ -1,3 +1,7 @@
+.gallery {
+    margin-top: 4rem !important;
+}
+
 .gallery__jumbo-container{
     height: 100vh;
     display: flex;

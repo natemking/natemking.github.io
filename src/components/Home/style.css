@@ -20,17 +20,8 @@
 }
 
 @media (max-width: 420px) {
-    .home__title {
-        position: static;
-    }
-    .home__title  h1 {
-        position: static;
-        font-size: calc(1.6em + 5vw);
-        margin-left: 10px;
-    }
-
+    .home__title, 
     .home__title h2 {
-        position: static;
-        float: right;
+        left: 1rem;
     }
 }

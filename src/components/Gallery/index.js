@@ -94,7 +94,7 @@ const Gallery = () => {
 
 	/** Render Gallery */
 	return (
-		<section className='container col-9-md mt-3 gallery'>
+		<section className='container col-9-md gallery'>
 			<h3>Professional Work.</h3>
 
 			<Suspense fallback={<Loading />}>

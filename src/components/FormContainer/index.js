@@ -104,7 +104,7 @@ const ContactFormContainer = () => {
 
     /** Render the FormContainer */
     return ( 
-        <section className="container-sm col-md-8 col-lg-6 mt-3 form__container">
+        <section className="container-sm col-md-8 col-lg-6 form__container">
 
             <h3>Communicate.</h3>
 
