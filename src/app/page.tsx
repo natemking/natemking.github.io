@@ -314,7 +314,7 @@ export default function Home(): React.JSX.Element {
                 </section>
 
                 <section
-                    className='py-20 sm:py-32'
+                    className='py-8 sm:py-12'
                     id={pageSections[2]}
                     ref={el => {
                         sectionsRef.current[2] = el;
@@ -338,9 +338,9 @@ export default function Home(): React.JSX.Element {
                         </div>
 
                         <div className='space-y-6 sm:space-y-8'>
-                            <div className='font-mono text-sm text-muted-foreground'>BEYOND</div>
+                            <div className='font-mono text-sm text-muted-foreground'>FIND ME BEYOND</div>
 
-                            <div className='grid grid-cols-1 gap-4 sm:grid-cols-2'>
+                            <div className='grid gap-4 grid-cols-2'>
                                 {socials.map(({ handle, name, url }) => (
                                     <Link
                                         className='group rounded-lg border border-border p-4 transition-all duration-300 hover:border-muted-foreground/50 hover:shadow-sm'
