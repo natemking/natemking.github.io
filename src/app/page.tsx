@@ -6,9 +6,9 @@ import Link from 'next/link';
 import { GithubIcon, LinkedinIcon, LinkIcon, MailIcon, MoonIcon, SunIcon } from 'lucide-react';
 import { Nav } from '@/components/Nav';
 import { Badge } from '@/components/shadcn/badge';
+import { Button } from '@/components/shadcn/button';
 import { emailAddress, focusBadges, pageSections, selectedWork, socials } from '@/lib/constants';
 import type { SocialSites } from '@/lib/types';
-import { Button } from '@/components/shadcn/button';
 
 const currentYear = new Date().getFullYear();
 
