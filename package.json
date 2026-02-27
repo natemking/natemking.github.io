@@ -4,9 +4,8 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
-        "build": "next build",
+        "deploy": "pnpm run build && cp CNAME out/CNAME && gh-pages -d out",
+        "build": "next build ",
         "dev": "next dev",
         "lint": "eslint",
         "start": "next start"
