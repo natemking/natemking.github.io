@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { GithubIcon, LinkedinIcon, LinkIcon, MailIcon, MoonIcon, SunIcon } from 'lucide-react';
 import { Nav } from '@/components/Nav';
 import { Badge } from '@/components/shadcn/badge';
+import { Button } from '@/components/shadcn/button';
 import { emailAddress, focusBadges, pageSections, selectedWork, socials } from '@/lib/constants';
 import type { SocialSites } from '@/lib/types';
 
@@ -338,9 +339,11 @@ export default function Home(): React.JSX.Element {
                         </div>
 
                         <div className='space-y-6 sm:space-y-8'>
-                            <div className='font-mono text-sm text-muted-foreground'>FIND ME BEYOND</div>
+                            <div className='font-mono text-sm text-muted-foreground'>
+                                FIND ME BEYOND
+                            </div>
 
-                            <div className='grid gap-4 grid-cols-2'>
+                            <div className='grid grid-cols-2 gap-4'>
                                 {socials.map(({ handle, name, url }) => (
                                     <Link
                                         className='group rounded-lg border border-border p-4 transition-all duration-300 hover:border-muted-foreground/50 hover:shadow-sm'
@@ -368,18 +371,14 @@ export default function Home(): React.JSX.Element {
                         <p className='text-sm text-muted-foreground'>Thanks for visiting</p>
 
                         <div className='flex items-center gap-4'>
-                            <button
+                            <Button
                                 aria-label='Toggle theme'
-                                className='group rounded-lg border border-border p-3 transition-all hover:border-muted-foreground/50'
+                                className='cursor-pointer rounded-lg border border-border p-3 transition-all hover:border-muted-foreground/50'
                                 onClick={toggleTheme}
-                                type='button'
+                                variant='ghost'
                             >
-                                {isDark ? (
-                                    <SunIcon />
-                                ) : (
-                                    <MoonIcon />
-                                )}
-                            </button>
+                                {isDark ? <SunIcon /> : <MoonIcon />}
+                            </Button>
                         </div>
                     </div>
                 </footer>
