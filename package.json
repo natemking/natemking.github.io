@@ -4,9 +4,10 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "deploy": "pnpm run build && cp CNAME out/CNAME && gh-pages -d out",
         "build": "next build ",
+       "deploy": "pnpm run build && pnpm run postexport && cp CNAME out/CNAME && gh-pages -d out --dotfiles",
         "dev": "next dev",
+        "postexport": "node rename-next.cjs",
         "lint": "eslint",
         "start": "next start"
     },
