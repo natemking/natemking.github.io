@@ -97,11 +97,21 @@ const {
 
 export const selectedWork: Work[] = [
     {
+        appName: 'Circleline Cruises Landing Page Campaign',
+        company: 'Circleline Sightseeing Cruises',
+        description:
+            'Built a new marketing landing page campaign for Circleline Sightseeing Cruises using Next.js and Contentful. Developed custom content models to support flexible, modular page creation, giving marketing the ability to launch and iterate without constant engineering involvement. Extended the frontend architecture to power dynamic cruise listings, promotional sections, and reusable content blocks. Enhanced the booking module to improve cruise comparison, helping customers evaluate options more easily and book with greater confidence.',
+        id: 6,
+        tech: [next, typescript, tailwind, shadCn, contentful],
+        year: 2026,
+        url: 'https://www.circleline.com/cruise/sightseeing-cruises'
+    },
+    {
         appName: 'SCAG Dealer Portal',
         company: 'Metalcraft of Mayville',
         description:
             'Reengineered and modernized a legacy ASP.NET B2B dealer portal using Next.js, introducing caching layers to improve performance and scalability. Engineered a new commerce engine enabling dealers to order parts and whole goods, and integrated a PNC Bank payment system that doubled average payments within the first month post-launch. Added multiple new features enhancing both dealer and internal user experiences. Deployed on Azure with Entra integration for streamlined authentication and access management.',
-        id: 1,
+        id: 5,
         isInternal: true,
         tech: [next, typescript, tailwind, shadCn, prisma, azure],
         year: 2025,
@@ -112,7 +122,7 @@ export const selectedWork: Work[] = [
         company: 'Metalcraft of Mayville',
         description:
             'Reengineered, rebuilt, and modernized legacy internal ASP.net/Java claims portal with Next.js, implementing caching for improved performance and scalability. Used server-side rendering and caching to improve client experience.',
-        id: 2,
+        id: 4,
         isInternal: true,
         tech: [next, typescript, tailwind, shadCn, openApi],
         year: 2024,
@@ -133,7 +143,7 @@ export const selectedWork: Work[] = [
         company: 'NIH RADx',
         description:
             'Led frontend development of a React-based Individual COVID Risk Calculator, translating risk model calculator into TypeScript in collaboration with an MIT scientist. Integrated dynamic content using Contentful CMS.',
-        id: 4,
+        id: 2,
         isSunset: true,
         tech: [next, typescript, tailwind, mui, contentful, aws],
         year: 2022,
@@ -144,7 +154,7 @@ export const selectedWork: Work[] = [
         company: 'Vincennes University',
         description:
             "Assisted University's web team in developing multiple Liferay fragments, widgets, and client extensions to enhance site functionality and visual appeal.",
-        id: 5,
+        id: 1,
         tech: [html, css, javascript, liferay],
         year: 2021,
         url: 'https://www.vinu.edu/'
